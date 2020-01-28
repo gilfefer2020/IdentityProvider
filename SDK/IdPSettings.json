@@ -1,0 +1,7 @@
+{
+  "smtphost": "email-smtp.us-west-2.amazonaws.com",
+  "smtpport": 587,
+  "smtpauthuser": "",
+  "smtpauthpass": "",
+  "emailfrom": ""
+}

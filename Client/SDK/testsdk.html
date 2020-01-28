@@ -1,0 +1,177 @@
+<div class="container">
+  <hr />
+  <h1>Settings</h1>
+  <hr />
+  <div class="form-group">
+    <label for=""
+      >By defasult (debug mode) the sdk url is localhost:3000. Change it here
+      with your url</label
+    >
+    <input class="form-control" id="url" name="url" />
+  </div>
+</div>
+<div class="container">
+  <hr />
+  <h1>Ping</h1>
+  <h3>A simple GET, just to see that the server is alive</h3>
+  <hr />
+  <div>
+    <button type="button" onclick="getPing()" class="btn btn-primary">
+      Ping
+    </button>
+    <div class="row" id="helpmsg"></div>
+  </div>
+</div>
+<div class="container">
+  <hr />
+  <h1>Login</h1>
+  <hr />
+  <div class="form-group">
+    <label for="loginuseremail">User email</label>
+    <input class="form-control" id="loginuseremail" name="loginuseremail" />
+  </div>
+  <div class="form-group">
+    <label for="loginuserpassword">User password</label>
+    <input
+      class="form-control"
+      id="loginuserpassword"
+      name="loginuserpassword"
+    />
+  </div>
+  <div class="form-group">
+    <label for="loginusersession">User Session</label>
+    <input class="form-control" id="loginusersession" name="loginusersession" />
+  </div>
+  <button type="butttom" onclick="Login()" class="btn btn-primary">
+    Login
+  </button>
+  <div class="row" id="loginusermsg"></div>
+</div>
+<div class="container">
+  <hr />
+  <h1>Create New User</h1>
+  <hr />
+  <div class="form-group">
+    <label for="userfullname">User full name</label>
+    <input class="form-control" id="userfullname" name="userfullname" />
+  </div>
+  <div class="form-group">
+    <label for="useremail">User email</label>
+    <input class="form-control" id="useremail" name="useremail" />
+  </div>
+  <div class="form-group">
+    <label for="userreemail">User email again</label>
+    <input class="form-control" id="userreemail" name="userreemail" />
+  </div>
+  <div class="form-group">
+    <label for="userpassword">User password</label>
+    <input class="form-control" id="userpassword" name="userpassword" />
+  </div>
+  <button type="butttom" onclick="NewUser()" class="btn btn-primary">
+    New
+  </button>
+  <div class="row" id="createnewusermsg"></div>
+</div>
+<div class="container">
+  <hr />
+  <h1>Confirm New User</h1>
+  <hr />
+  <div class="form-group">
+    <label for="confirmuseremail">User email</label>
+    <input class="form-control" id="confirmuseremail" name="confirmuseremail" />
+  </div>
+  <div class="form-group">
+    <label for="confirmuserpassword">User password</label>
+    <input
+      class="form-control"
+      id="confirmuserpassword"
+      name="confirmuserpassword"
+    />
+  </div>
+  <button type="butttom" onclick="ConfirmNewUser()" class="btn btn-primary">
+    Confirm
+  </button>
+  <div class="row" id="confirmnewusermsg"></div>
+</div>
+<div class="container">
+  <hr />
+  <h1>Forget password</h1>
+  <hr />
+  <div class="form-group">
+    <label for="forgetpasswordemail">User email</label>
+    <input
+      class="form-control"
+      id="forgetpasswordemail"
+      name="forgetpasswordemail"
+    />
+  </div>
+  <button type="butttom" onclick="ForgetPassword()" class="btn btn-primary">
+    Forget
+  </button>
+  <div class="row" id="forgetpasswordmsg"></div>
+</div>
+<div class="container">
+  <hr />
+  <h1>Recover password</h1>
+  <hr />
+  <div class="form-group">
+    <label for="recoverpasswordemail">User email</label>
+    <input
+      class="form-control"
+      id="recoverpasswordemail"
+      name="recoverpasswordemail"
+    />
+  </div>
+  <div class="form-group">
+    <label for="recoverpasswordsession">Recover Session</label>
+    <input
+      class="form-control"
+      id="recoverpasswordsession"
+      name="recoverpasswordsession"
+    />
+  </div>
+  <div class="form-group">
+    <label for="recoverpasswordnewpassword">New Password</label>
+    <input
+      class="form-control"
+      id="recoverpasswordnewpassword"
+      name="recoverpasswordnewpassword"
+    />
+  </div>
+  <button type="butttom" onclick="RecoverPassword()" class="btn btn-primary">
+    Recover
+  </button>
+  <div class="row" id="recoverpasswordmsg"></div>
+</div>
+<div class="container">
+  <hr />
+  <h1>Get User</h1>
+  <hr />
+  <div>
+    <div class="form-group">
+      <label for="getuseremail">User email</label>
+      <input class="form-control" name="getuseremail" id="getuseremail" />
+    </div>
+    <button type="button" onclick="getUser()" class="btn btn-primary">
+      Get User
+    </button>
+    <div class="row" id="getusermsg"></div>
+  </div>
+</div>
+<div class="container">
+  <hr />
+  <h1>Delete User</h1>
+  <hr />
+  <div>
+    <div class="form-group">
+      <label for="deleteuseremail">User email</label>
+      <input class="form-control" name="deleteuseremail" id="deleteuseremail" />
+    </div>
+    <button type="button" onclick="deleteUser()" class="btn btn-primary">
+      Delete
+    </button>
+    <div class="row" id="deleteusermsg"></div>
+  </div>
+</div>
+<script src="testsdk.js"></script>
+<script src="sha256.js"></script>

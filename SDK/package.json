@@ -1,0 +1,29 @@
+{
+  "name": "idpserver",
+  "version": "1.0.0",
+  "description": "Create MessaageQ Server",
+  "author": "Gil Fefer",
+  "main": "idpmain.js",
+  "scripts": {
+    "start": "node idpmain.js"
+  },
+  "dependencies": {
+    "@types/node": "^13.1.4",
+    "@types/winston": "^2.4.4",
+    "aws-sdk": "^2.597.0",
+    "body-parser": "^1.19.0",
+    "cores": "^0.8.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fast-sha256": "^1.2.0",
+    "guid-typescript": "^1.0.9",
+    "nodemailer": "^6.4.2",
+    "text-encoding": "^0.7.0",
+    "typescript-logger": "^2.0.0",
+    "typescript-logging": "^0.6.4",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.4"
+  }
+}
