@@ -17,7 +17,7 @@
     "express": "^4.17.1",
     "fast-sha256": "^1.2.0",
     "guid-typescript": "^1.0.9",
-    "nodemailer": "^6.4.2",
+    "nodemailer": "^6.4.16",
     "text-encoding": "^0.7.0",
     "typescript-logger": "^2.0.0",
     "typescript-logging": "^0.6.4",
